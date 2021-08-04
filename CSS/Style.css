@@ -9,16 +9,18 @@
     content: "";
     background-color: black;
     position: absolute;
-    height: 91px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
     z-index: -1;
     top: 0px;
     left: 0px;
-    opacity: 0.5;
+    right: 0px;
+    opacity: 0.3;
 }
 #navbar{
     /* border: 2px solid red; */
     display: flex;
+    position: relative;
     align-items: center;
 }
 #logo img{
@@ -39,9 +41,30 @@
     text-decoration: none;
     padding: 0px 20px;
     color: white;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
 }
 #navbar ul li a:hover{
     color: black;
+    font-size: 25px;
+    font-weight: bold;
     background-color: white;
     border-radius: 100px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 50px 531px;
+}
+#home::before{
+    content: "";
+    background: url('../img/BG_3.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.8;
 }
