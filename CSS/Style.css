@@ -197,3 +197,11 @@ footer{
     background-color: #d0d1d3;
     color: black;
 }
+#upper{
+    position: relative;
+    top: 58px;
+}
+#lower{
+    position: relative;
+    top: 101px;
+}
